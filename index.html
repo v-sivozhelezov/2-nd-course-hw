@@ -6,10 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+    <section class="top center ">
+        <h1 class="top__heading">Добро пожаловать <br> на мой сайт !</h1>
+        <p class="top__text">Вам предстоит пройти несколько увлекательных<br>игр. Если готов нажимай <span class="top__text_bold">поехали</span> и <span class="top__text_bold">приступай</span></p>
+        <button type="button" class="top__button">Поехали!</button>
+    </section>
+    <section class="content center">
+        <h3 class="content__heading">Каталог с играми</h3>
+        <div class="game-box">
+            <div class="game-box__game game">
+                <a class="game__link" href="#"><img src="img/game1.jpg" alt="Игра первая" class="game__img"></a>
+                <h4 class="game__name">Игра 1</h4>
+            </div>
+            <div class="game-box__game game">
+                <a class="game__link" href="#"><img src="img/game2.jpg" alt="Игра вторая" class="game__img"></a>
+                <h4 class="game__name">Игра 2</h4>
+            </div>
+            <div class="game-box__game game">
+                <a class="game__link" href="#"><img src="img/game3.jpg" alt="Игра третья" class="game__img"></a>
+                <h4 class="game__name">Игра 3</h4>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
