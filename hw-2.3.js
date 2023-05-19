@@ -1,10 +1,10 @@
 //Задание 1
-let password = 'qwerty';
-let userPassword = prompt('Введите пароль');
-password == userPassword ? alert('Пароль введен верно') : alert('Пароль введен неверно');
+const password = 'qwerty';
+const userPassword = prompt('Введите пароль');
+alert(password == userPassword ? 'Пароль введен верно' : 'Пароль введен неверно');
 
 // //Задание 2
-let c = Number(prompt('Введите число'));
+const c = Number(prompt('Введите число'));
 if (c > 0 && c < 10) {
     console.log('Верно');
 } else {
@@ -12,8 +12,8 @@ if (c > 0 && c < 10) {
 }
 
 //Задание 3
-let d = Number(prompt('Введите первое число'));
-let e = Number(prompt('Введите второе число'));
+const d = Number(prompt('Введите первое число'));
+const e = Number(prompt('Введите второе число'));
 if (d > 100 || e > 100) {
     console.log('Верно');
 } else {
@@ -21,13 +21,13 @@ if (d > 100 || e > 100) {
 }
 
 //Задание 4
-let a = '2';
-let b = '3';
+const a = '2';
+const b = '3';
 // Код выше изменять менять нельзя, чтобы решить задачу исправьте код ниже:
 alert(Number(a) + Number(b));
 
 //Задание 5
-let monthNumber = Number(prompt('Введите номер месяца'));
+const monthNumber = Number(prompt('Введите номер месяца'));
 switch (monthNumber) {
     case 1:
     case 2:
@@ -55,10 +55,10 @@ switch (monthNumber) {
 }
 
 // Задание 7
-let number = Number(prompt('Введите любое число'));
+const number = Number(prompt('Введите любое число'));
 console.log(number);
 console.log(Number.isNaN(number));
-if (Number.isNaN(number) === true) {
+if (Number.isNaN(number)) {
     alert('Введено не число');
 } else if (number % 2 !== 0) {
     alert('Число нечетное');
@@ -67,8 +67,8 @@ if (Number.isNaN(number) === true) {
 }
 
 // задание 8
-let clientOS = Number(prompt('Введите "0" если ОС - iOS, "1" - Android'));
-switch (clientOS) {
+const clientOC = Number(prompt('Введите "0" если ОС - iOS, "1" - Android'));
+switch (clientOC) {
     case 0:
         alert('Установите версию приложения для iOS по ссылке')
         break;
