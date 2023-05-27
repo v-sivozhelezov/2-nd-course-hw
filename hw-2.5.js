@@ -41,7 +41,9 @@ function checkAge(age) {
         alert('Вы ввели неверное значение');
     } else if (age > 18) {
         alert('Добро пожаловать!');
-    } else alert('Привет!');
+    } else {
+        alert('Привет!');
+    }
 }
 
 checkAge(prompt('Введите число'));
