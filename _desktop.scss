@@ -7,7 +7,8 @@ a {
     text-decoration: none;
 }
 
-button:hover, a:hover {
+button:hover,
+a:hover {
     cursor: url(img/Vector.svg), default;
 }
 
@@ -52,22 +53,23 @@ body {
         }
     }
 
-    &__button {
-        width: 234px;
-        height: 48px;
-        background: #9C0332;
-        border-radius: 30px;
-        border: none;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        color: #FFFFFF;
-        font-family: 'Montserrat', sans-serif;
+}
 
-        &:hover {
-            background: #EB443F;
-        }
+.button {
+    width: 234px;
+    height: 48px;
+    background: #9C0332;
+    border-radius: 30px;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+
+    &:hover {
+        background: #EB443F;
     }
 }
 
@@ -122,6 +124,46 @@ body {
         line-height: 32px;
         color: #FFFFFF;
     }
+}
 
+.footer__gameCard {
+    padding-top: 234px;
+    padding-bottom: 234px;
+}
 
+.gameCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 64px;
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+        width: 590px;
+    }
+
+    &__heading {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        align-items: center;
+        color: #FFFFFF;
+
+        &-none {
+            display: none;
+        }
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        align-items: center;
+        color: #FFFFFF;
+    }
 }

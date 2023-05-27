@@ -7,7 +7,8 @@ a {
   text-decoration: none;
 }
 
-button:hover, a:hover {
+button:hover,
+a:hover {
   cursor: url(img/Vector.svg), default;
 }
 
@@ -48,7 +49,8 @@ body {
 .top__text_bold {
   font-weight: 600;
 }
-.top__button {
+
+.button {
   width: 234px;
   height: 48px;
   background: #9C0332;
@@ -61,7 +63,7 @@ body {
   color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
 }
-.top__button:hover {
+.button:hover {
   background: #EB443F;
 }
 
@@ -111,16 +113,48 @@ body {
   color: #FFFFFF;
 }
 
+.footer__gameCard {
+  padding-top: 234px;
+  padding-bottom: 234px;
+}
+
+.gameCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 64px;
+}
+.gameCard__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  width: 590px;
+}
+.gameCard__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  align-items: center;
+  color: #FFFFFF;
+}
+.gameCard__heading-none {
+  display: none;
+}
+.gameCard__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  align-items: center;
+  color: #FFFFFF;
+}
+
 @media (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 393px);
     padding-right: calc(50% - 393px);
-  }
-}
-@media (min-width: 768px) and (max-width: 833px) {
-  .center {
-    padding-left: 24px;
-    padding-right: 24px;
   }
 }
 @media (min-width: 1240px) {
@@ -133,6 +167,36 @@ body {
   .center {
     padding-left: 24px;
     padding-right: 24px;
+  }
+}
+@media (min-width: 768px) and (max-width: 833px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top__heading {
+    text-align: center;
+  }
+  .game-box {
+    justify-content: center;
+  }
+  .gameCard {
+    display: flex;
+    justify-content: center;
+  }
+  .gameCard__box {
+    align-items: center;
+  }
+  .gameCard__heading {
+    text-align: center;
+  }
+  .gameCard__text {
+    text-align: center;
   }
 }
 @media (max-width: 767px) {
@@ -178,5 +242,30 @@ body {
   }
   .game__name {
     left: 16px;
+  }
+  .footer__gameCard {
+    padding-top: 51px;
+    padding-bottom: 85px;
+  }
+  .gameCard {
+    display: flex;
+    justify-content: center;
+  }
+  .gameCard__box {
+    align-items: center;
+  }
+  .gameCard__heading {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .gameCard__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .gameCard__img {
+    width: 344px;
+    height: 236px;
   }
 }/*# sourceMappingURL=style.css.map */
