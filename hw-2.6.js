@@ -96,15 +96,10 @@ filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
 // задание 14
 const random = [];
 
-
 for (i = 0; i < 10; i++) {
-    random.push(Math.floor(Math.random() * (11 - 0) + 0));
+    random.push(Math.floor(Math.random() * 11));
 }
-const parity = random.map(item => {
-    if (item % 2 === 0) {
-        return item;
-    }
-})
+const parity = random.filter(item => item % 2 === 0);
 
 console.log(random);
 console.log(parity);
