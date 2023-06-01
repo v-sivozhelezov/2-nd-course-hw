@@ -111,7 +111,6 @@ body {
         border-radius: 18px;
         width: 378px;
         height: 300px;
-
     }
 
     &__name {
@@ -143,6 +142,9 @@ body {
         justify-content: center;
         gap: 32px;
         width: 590px;
+        &-right {
+            order: 2;
+        }
     }
 
     &__heading {
@@ -165,5 +167,9 @@ body {
         line-height: 32px;
         align-items: center;
         color: #FFFFFF;
+    }
+
+    &__img-left {
+        order: 1;
     }
 }
