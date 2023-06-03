@@ -46,13 +46,13 @@ console.log(getNumbers(100));
 
 
 //задание 7
-function getNumbers(min, max) {
+function getNumber(min, max) {
     let numbers = [];
     numbers.push(Math.round(Math.random() * (max - min)) + min);
     return numbers;
 }
 
-console.log(getNumbers(5, 10));
+console.log(getNumber(5, 10));
 
 //задание 8
 console.log(new Date());
