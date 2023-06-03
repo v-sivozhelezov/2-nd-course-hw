@@ -131,6 +131,9 @@ body {
   gap: 32px;
   width: 590px;
 }
+.gameCard__box-right {
+  order: 2;
+}
 .gameCard__heading {
   font-style: normal;
   font-weight: 700;
@@ -150,6 +153,9 @@ body {
   align-items: center;
   color: #FFFFFF;
 }
+.gameCard__img-left {
+  order: 1;
+}
 
 @media (max-width: 1024px) {
   .center {
@@ -167,6 +173,9 @@ body {
   .center {
     padding-left: 24px;
     padding-right: 24px;
+  }
+  .gameCard__box-right {
+    order: 1;
   }
 }
 @media (min-width: 768px) and (max-width: 833px) {
